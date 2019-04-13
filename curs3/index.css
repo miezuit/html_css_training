@@ -1,0 +1,48 @@
+/* CSS Document */
+
+
+body {
+	background-color: rgba(196,186,161,1.00)  
+}
+div {
+	margin: 5px;
+	padding: 0.5em;
+}
+#header {
+	height: 100px;
+	min-width: 500px;
+}
+#header, #footer {
+	background-color:#756A56;
+}
+#main, #order, #menu {
+	background-color: burlywood;
+	clear: both;
+}
+#main {
+	flex-grow: 2;
+}
+#order {
+	flex-grow: 1;
+}
+#menu {
+	flex-grow: 1;
+}
+#footer {
+	color: white;
+}
+h2 {
+	color: brown;
+}
+
+#logo {
+	float: left;
+}
+
+#slogan {
+	float:right;
+}
+
+#container {
+	display: flex;
+}
