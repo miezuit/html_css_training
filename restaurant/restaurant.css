@@ -1,0 +1,45 @@
+body {
+
+}
+
+strong {
+    display: block;
+    color: #33baaf;
+    font-family: 'Amatic SC', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    font-family: 'Amatic SC', Georgia, "Times New Roman", Times, serif;
+    color: #f6af33;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+}
+
+p {
+    font-family: 'Alegreya', Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: none;
+    color: #333333;
+}
+
+.nav-link a {
+    display: inline-block;
+    height: 60px;
+    padding-top: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Alegreya', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
