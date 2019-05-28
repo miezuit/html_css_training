@@ -1,0 +1,8 @@
+.parallax {
+    background-image: url("img_parallax1.jpg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
