@@ -1,0 +1,41 @@
+/* CSS Document */
+
+body {
+	--blue-color: #33baaf;
+	--orange-color: #f6af33;
+}
+
+.logo {
+	height: 80px;
+	width: 80px;
+}
+
+#navbarNav {
+	justify-content: flex-end;
+}
+
+.nav-link {
+	font-family: 'Alegreya';
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: var(--blue-color);
+}
+
+.menu {
+	background-image: url("bg-header.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	opacity: 0.8;
+}
+
