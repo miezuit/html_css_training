@@ -1,0 +1,84 @@
+.navbar {
+    background: orangered;
+
+}
+.nav-link, .navbar-brand {
+    color: white;
+    cursor: pointer;
+}
+.nav-link:hover, .navbar-brand:hover {
+    background: #f4f4f4;
+    color: orangered;
+}
+.navbar-collapse { justify-content: flex-end; }
+h1 {
+    color: orangered;
+}
+.header {
+    height: 100vh;
+    background-image: url('images/headerback.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.description {
+    position: absolute;
+    top: 30%;
+    margin-left:0px;
+    padding: 2em;
+}
+input.button {
+    border: 1px solid #F97300;
+    background: #F97300;
+    color: #fff;
+}
+.overlay {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+.about img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.about span {
+    position: absolute;
+    left: 120px;
+}
+.about .desc{
+    padding: 2em;
+    border-left: 4px solid #10828C;
+}
+/*team section*/
+.team{
+    margin: 4em 0;
+    position: relative;
+
+}
+.team h1{
+    color:#F97300;
+    margin: 2em;
+}
+.team .des{
+    background: #F97300;
+    color: #fff;
+    text-align: center;
+    border-top-right-radius: 93%;
+    transition:.3s ease-in-out;
+    position: absolute;
+    width: 88%;
+    bottom: 24px;
+}
+.team .item:hover .des{
+    height: 100%;
+    background:#f973007d;
+    position: absolute;
+    width: 89%;
+    padding: 5em;
+    top: 0;
+    border-top-right-radius: 0;
+}

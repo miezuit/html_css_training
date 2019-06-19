@@ -5,10 +5,39 @@
     <title>Title</title>
 </head>
 <body>
+<style>
+    #star-six {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red;
+        position: relative;
+    }
+
+    .triangle {
+        border-color: yellow blue red green;
+        border-style: solid;
+        border-width: 200px 200px 200px 200px;
+        height: 0px;
+        width: 0px;
+    }
+
+    .triangle {
+        border-color: transparent transparent red transparent;
+        border-style: solid;
+        border-width: 0px 200px 200px 200px;
+        height: 0px;
+        width: 0px;
+    }
+
+</style>
     <audio id="birds" controls>
         <source src="birds.ogg" type="audio/ogg">
         <source src="birds.mp3" type="audio/mpeg">
         <a href="birds.mp3">Download drums.mp3</a>
     </audio>
+    <div id="star-six"></div>
 </body>
 </html>
+
