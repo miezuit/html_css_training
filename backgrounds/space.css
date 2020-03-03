@@ -1,7 +1,20 @@
 body {
-    background-image: url("img/rocket.png"), url("img/earth.png"), url("img/space.jpg");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: auto, 20%, cover;
+    background-image: url("img/rocket.png"), url("img/earth.png"), url("img/space2.png");
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: auto, 20%, auto;
     background-position: 20% 20%, center center, 0% 0%;
     height: 100vh;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+@keyframes slide {
+    from {
+        background-position: 20% 20%, center center, 0 0;
+    }
+    to {
+        background-position: 20% 20%, center center, -1024px 0;
+    }
 }
