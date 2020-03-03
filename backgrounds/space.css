@@ -1,0 +1,7 @@
+body {
+    background-image: url("img/rocket.png"), url("img/earth.png"), url("img/space.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, 20%, cover;
+    background-position: 20% 20%, center center, 0% 0%;
+    height: 100vh;
+}
