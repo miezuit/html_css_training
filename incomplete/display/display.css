@@ -1,0 +1,23 @@
+header {
+    background-color: linen;
+}
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 1em;
+}
+
+a {
+    color: tomato;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
