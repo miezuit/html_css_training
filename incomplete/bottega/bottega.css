@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:700&display=swap');
+*, *::before, *::after {
+   margin: 0;
+   padding: 0; 
+}
+body {
+    font-size: 1.2em;
+}
+.welcome, .portofolio {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.welcome {
+    z-index: 1;
+    background-color: black;
+    background-image: url('img/1.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+.portofolio {
+    z-index: 0;
+    background-color: rgb(205, 92, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pictures {
+    width: 80%;
+    text-align: center;
+}
+.portofolio .pictures img {
+    width: 200px;
+    height: 300px;
+}
+.title {
+    margin-top: 1em;
+    font-family: 'Lora';
+    color: white;
+    font-size: 5em;
+}
+.enter, .back {
+    margin: 0.8em;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    cursor: pointer;
+}
+.enter::after, .back::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    background-color: white;
+    opacity: 0;
+    width: 0;
+    transition-duration: 0.5s;
+}
+.enter:hover::after, .back:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+@keyframes bounce {
+    from {
+        top: 0px; 
+        color: white;
+    }
+    to {
+        top: -0.7em;
+        color: black;
+    }
+}
+.title span {
+    position: relative;
+}
+.title span.bounce {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
