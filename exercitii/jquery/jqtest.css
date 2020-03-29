@@ -1,0 +1,9 @@
+div {
+    background-color: orange;
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border-radius: 10px;
+}

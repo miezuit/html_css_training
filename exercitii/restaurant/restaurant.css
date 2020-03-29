@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Amatic+SC&display=swap');
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    --blue-color: #33baaf;
+    --orange-color: #f6af33;
+}
+body::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: #33baaf;
+}
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 4.5em;
+    opacity: 0.9;
+}
+.logo .name {
+    font-family: 'Amatic SC';
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--orange-color);
+}
+nav li {
+    display: inline-block;
+    font-family: 'Alegreya';
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 1em;
+    font-size: 1.4em;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+nav li a::after {
+    content: '\2022';
+    padding-left: 1em;
+    color: var(--blue-color);
+}
+li:last-child > a::after {
+    content: '';
+}
+.welcome {
+    background-image: url('img/bg-header.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 110vh;
+}
+p {
+    font-family: 'Alegreya';
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+}
+h1 {
+    font-family: 'Amatic SC';
+    font-weight: bold;
+    text-align: center;
+    padding: 0.7em 0;
+    line-height: 2.5em;
+}
+h1 span:first-child {
+    display: block;
+    color: var(--blue-color);
+    font-size: 2em;
+}
+h1 span:last-child {
+    font-size: 3em;
+    display: block;
+    color: var(--orange-color);
+}
+h1 span:first-child::before, h1 span:first-child::after {
+    content: ' - ';
+}
+.ambience {
+    background-image: url('img/ambiance.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+

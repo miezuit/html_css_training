@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo 2';
+    font-size: 4em;
+    height: 100vh;
+}
+.table {
+    display: grid;
+    grid-template-columns: 2em 2em 2em;
+    grid-template-rows: 2em 2em 2em;
+    --border: 3px solid orange;
+}
+.table div {
+    text-align: center;
+    font-size: 1.5em;
+    user-select: none;
+}
+.table div:nth-child(1), .table div:nth-child(3), 
+.table div:nth-child(4), .table div:nth-child(6) {
+    border-bottom: var(--border);
+}
+.table div:nth-child(2), .table div:nth-child(5) {
+    border-left: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+.table div:nth-child(8) {
+    border-left: var(--border);
+    border-right: var(--border);
+}
+.x {
+    color: lightseagreen;
+}
+.z {
+    color: orangered;
+}
+.end {
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}

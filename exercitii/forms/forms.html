@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form action="" method="post">
+        <label for="first_name">First name:</label>
+        <input type="text" name="first_name" id="first_name" placeholder="Your name">
+        <br>
+
+        <label for="last_name">Last name:</label>
+        <input type="text" name="last_name" id="last_name">
+        <br>
+
+        <input type="radio" name="account_type" id="free">
+        <label for="free">Free</label>
+        <br>
+        <input type="radio" name="account_type" id="business">
+        <label for="business">Business</label>
+        <br>
+        <input type="radio" name="account_type" id="student">
+        <label for="student">Student</label>
+        <br>
+
+        <input type="checkbox" name="work_from_home" id="work_from_home">
+        <label for="work_from_home">Work from home</label>
+        <br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="ro">Romania</option>
+            <option value="us">United States</option>
+            <option value="fr">France</option>
+            <option value="ru">Russia</option>
+            <option value="cn">China</option>
+        </select>
+        <br>
+
+        <label for="start_date">Start date:</label>
+        <input type="date" name="start_date" id="start_date">
+        <br>
+
+        <input type="range" name="" id="" min="0" max="100" value="20">
+        <br>
+
+        <label for="comments">Leave your comments:</label> <br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <br>
+
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
