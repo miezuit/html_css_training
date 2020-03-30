@@ -2,6 +2,7 @@
 *, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -50,31 +51,63 @@ header {
     font-weight: bold;
     color: var(--orange-color);
 }
-nav li {
-    display: inline-block;
-    font-family: 'Alegreya';
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-left: 1em;
-    font-size: 1.4em;
-}
-nav li a {
-    text-decoration: none;
-    color: black;
-}
-nav li a::after {
-    content: '\2022';
-    padding-left: 1em;
-    color: var(--blue-color);
-}
-li:last-child > a::after {
-    content: '';
-}
 .welcome {
     background-image: url('img/bg-header.jpg');
     background-size: cover;
     background-attachment: fixed;
-    height: 110vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.wheel {
+    --size: 5em;
+    width: var(--size);
+    height: var(--size);
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    top: calc(var(--size) / 2);
+}
+.wheel .down {
+    width: calc(var(--size) / 4);
+    height: calc(var(--size) / 4);
+    border-left: medium solid var(--blue-color);
+    border-bottom: medium solid var(--blue-color);
+    transform: rotate(-45deg);
+    position: relative;
+    top: calc(var(--size) / 8);
+}
+.wheel .gear {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    --border: 0.3em;
+    border: var(--border) dashed white;
+    border-radius: inherit;
+    box-sizing: content-box;
+    top: calc(0em - var(--border));
+    transform: rotate(0deg);
+}
+.wheel:hover .down {
+    opacity: 0.5;
+}
+.wheel:hover .gear {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 p {
     font-family: 'Alegreya';
@@ -87,6 +120,8 @@ h1 {
     text-align: center;
     padding: 0.7em 0;
     line-height: 2.5em;
+    z-index: 1;
+    position: relative;
 }
 h1 span:first-child {
     display: block;
@@ -107,5 +142,3 @@ h1 span:first-child::before, h1 span:first-child::after {
     background-attachment: fixed;
     height: 100vh;
 }
-
-
